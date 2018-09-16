@@ -1,0 +1,10 @@
+exec: /script.sh
+data_sources:
+  - file
+  - environment
+  - defaults
+template_sources:
+  - file
+defaults:
+  global:
+    app_name: web_client

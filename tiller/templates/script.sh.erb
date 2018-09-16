@@ -1,0 +1,12 @@
+#!/bin/bash
+
+TEST_ENV=<%= test_env %>
+APP_NAME=<%= app_name %>
+
+
+echo "$TEST_ENV" >> index.html
+echo "$APP_NAME" >> index.html
+echo "$environment" >> index.html
+
+# /usr/local/bin/ruby -run -e httpd . -p 8000
+/usr/local/bin/http-server

@@ -1,0 +1,5 @@
+script.sh.erb:
+  target: /script.sh
+  perms: 755
+  config:
+    test_env: test-prod
